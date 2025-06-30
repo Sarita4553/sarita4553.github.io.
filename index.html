@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>OneSignal Register</title>
+  <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+  <script>
+    window.OneSignal = window.OneSignal || [];
+    OneSignal.push(function() {
+      OneSignal.init({
+        appId: "d2783680-973f-459a-8550-686b0f9c77b4", // Replace this
+        notifyButton: {
+          enable: true,
+        }
+      });
+
+      OneSignal.showSlidedownPrompt();
+    });
+  </script>
+</head>
+<body>
+  <h2>Enable Notifications</h2>
+  <p>Please allow push notification permission in your browser.</p>
+</body>
+</html>
